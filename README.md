@@ -1,7 +1,7 @@
 # SortingVisualiser-ReactJS
 
-###### Sorting Visualiser with support for the following Sorting Algorithms
+## Sorting Visualiser with support for the following Sorting Algorithms
 
 
-###### Demo: 
+## Demo: 
 https://kgdavidson.github.io/SortingVisualiser-ReactJS/

@@ -1,35 +1,35 @@
 import React from 'react';
 import './BarPanel.css';
 
-function BarPanel(props) {
-    
-    function GenBars(props) {
-        var w = 70 / props.sampleSize;
-        var bars = [];
-        var colour = "66fcf1";
+const BarPanel = (props) => {
+    const GenBars = () => {
+        var barWidth = 70 / props.sampleSize;
+        var barsArray = [];
+        var barColour = "66fcf1";
         for (var i = 0; i < props.sampleSize; i++) {
-            colour = "66fcf1";
+            barColour = "66fcf1";
             if (props.currentCheck.includes(i)) {
-                colour = "E03616";
+                barColour = "E03616";
             }
             if (props.currentSwitching.includes(i)) {
-                colour = "62AB37";
+                barColour = "62AB37";
             }
-            bars.push(Bar(w, props.setValues[i], colour))
+            barsArray.push(Bar(barWidth, props.dataValues[i], barColour))
         }
-        return (bars);
+        return (barsArray);
     }
-
-    function Bar(w, setValues, colour){
+    
+    const Bar = (barWidth, dataValues, barColour) => {
         return (
-            <div style={{width: + w + 'vw', height: setValues + 'vh', marginTop: 93 - setValues + 'vh', backgroundColor: '#' + colour}} className="Bar"></div>
+            <div style={{width: + barWidth + 'vw', height: dataValues + 'vh', marginTop: 93 - dataValues + 'vh', backgroundColor: '#' + barColour}} className="Bar"></div>
         );
     }
-
+    
     return (
         <div className="BarPanel">
-                {GenBars(props)}
+                {GenBars()}
         </div>
     );
 }
+
 export default BarPanel;

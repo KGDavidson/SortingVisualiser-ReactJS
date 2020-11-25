@@ -1,22 +1,22 @@
 import React, {useState} from 'react';
 import './OptionsPanelSV.css';
 
-function OptionsPanel(props) { 
-    const [started, setStarted] = useState(false);
+const OptionsPanel = (props) => {
+    const [started, SetStarted] = useState(false);
 
-    function startButton() {
+    const StartSort = () => {
         if (props.sampleSize !== 0) {
-            setStarted(!started);
-            props.startButton(!started);
+            SetStarted(!started);
+            props.StartSort(!started);
         }
     }
 
-    function returnSampleSize(value){
-        setStarted(false);
-        props.sampleSizeSet(value);
+    const ReturnSampleSize = (value) => {
+        SetStarted(false);
+        props.SampleSizeSet(value);
     }
 
-    function returnInputValue(e) {
+    const ReturnInputValue = (e) => {
         var value = e.target.value;
         if (value < 1) {
             value = 1;
@@ -25,28 +25,28 @@ function OptionsPanel(props) {
             value = 100;
         }
         e.target.value = value;
-        returnSampleSize(value);
+        ReturnSampleSize(value);
     }
 
-    function returnSortAlg(e) {
-        props.sortAlgSet(e.target.value);
+    const ReturnSortAlg = (e) => {
+        props.SortAlgSet(e.target.value);
     }
 
-    function returnSpeed(e) {
-        props.sortSpeedSet(e.target.value);
+    const ReturnSpeed = (e) => {
+        props.SortSpeedSet(e.target.value);
     }
 
-    return(
+    return (
         <div className="OptionsPanel">
             <h1>SORTING VISUALISER</h1>
             <h3>Sample Size
                 <br/>
-                <input className="ssInput" onChange={e => {returnInputValue(e)}} type="number" defaultValue={1}/>
+                <input className="ssInput" onChange={e => {ReturnInputValue(e)}} type="number" defaultValue={1}/>
             </h3>
             <br/>
             <h3>Sorting Algorithm
                 <br/>
-                <select onChange={e => {returnSortAlg(e)}}>
+                <select onChange={e => {ReturnSortAlg(e)}}>
                     <option value="0">Bubble Sort</option>
                     <option value="1">Insertion Sort</option>
                     <option value="2">Quick Sort</option>
@@ -56,10 +56,10 @@ function OptionsPanel(props) {
             <br/>
             <h3>Sorting Speed
                 <br/>
-                <input onChange={e => {returnSpeed(e)}} className="slider" type="range" min="0" max="0.99" step="0.01"/>
+                <input onChange={e => {ReturnSpeed(e)}} className="slider" type="range" min="0" max="0.99" step="0.01"/>
             </h3>
             <br/>
-            <button onClick={startButton}>{started ? "Reset" : "Start"}</button>
+            <button onClick={StartSort}>{started ? "Reset" : "Start"}</button>
         </div>
     );
 }

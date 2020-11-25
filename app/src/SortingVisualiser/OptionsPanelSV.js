@@ -2,12 +2,12 @@ import React, {useState} from 'react';
 import './OptionsPanelSV.css';
 
 const OptionsPanel = (props) => {
-    const [started, SetStarted] = useState(false);
+    const [isStarted, SetStarted] = useState(false);
 
     const StartSort = () => {
         if (props.sampleSize !== 0) {
-            SetStarted(!started);
-            props.StartSort(!started);
+            SetStarted(!isStarted);
+            props.StartSort(!isStarted);
         }
     }
 
@@ -59,7 +59,7 @@ const OptionsPanel = (props) => {
                 <input onChange={e => {ReturnSpeed(e)}} className="slider" type="range" min="0" max="0.99" step="0.01"/>
             </h3>
             <br/>
-            <button onClick={StartSort}>{started ? "Reset" : "Start"}</button>
+            <button onClick={StartSort}>{isStarted ? "Reset" : "Start"}</button>
         </div>
     );
 }

@@ -6,7 +6,7 @@
 ### * Quick Sort
 ### * Merge Sort
 
-####
+</br>
 
 ## Demo: 
 https://kgdavidson.github.io/SortingVisualiser-ReactJS/

@@ -1,4 +1,4 @@
 # SortingVisualiser-ReactJS
 
-Demo
+Demo: 
 https://kgdavidson.github.io/SortingVisualiser-ReactJS/

@@ -23,7 +23,7 @@ const SortingVisualiser = () => {
                 resolve(); 
             }, sortSpeed); 
         }); 
-    };
+    }
 
     const SetStarted = (i) => {
         isStarted = i;

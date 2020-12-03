@@ -1,10 +1,10 @@
 # SortingVisualiser-ReactJS
 
 ### Sorting Visualiser with support for the following Sorting Algorithms
-#### * Bubble Sort
-#### * Insertion Sort
-#### * Quick Sort
-#### * Merge Sort
+- [x] Bubble Sort
+- [x] Insertion Sort
+- [x] Quick Sort
+- [x] Merge Sort
 
 </br>
 

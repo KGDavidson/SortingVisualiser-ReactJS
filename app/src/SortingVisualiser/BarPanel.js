@@ -5,14 +5,14 @@ const BarPanel = (props) => {
     const GenBars = () => {
         var barWidth = 70 / props.sampleSize;
         var barsArray = [];
-        var barColour = "66fcf1";
+        var barColour = "ea5455";
         for (var i = 0; i < props.sampleSize; i++) {
-            barColour = "66fcf1";
+            barColour = "ea5455";
             if (props.currentCheck.includes(i)) {
-                barColour = "E03616";
+                barColour = "f07b3f";
             }
             if (props.currentSwitching.includes(i)) {
-                barColour = "62AB37";
+                barColour = "e8e8e8";
             }
             barsArray.push(Bar(barWidth, props.dataValues[i], barColour))
         }

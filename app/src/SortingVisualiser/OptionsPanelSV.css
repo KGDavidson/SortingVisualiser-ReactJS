@@ -1,8 +1,8 @@
 .OptionsPanel {
-  background-color: #0b0c10;
+  background-color: #223041;
   height: 93vh;
   width: 30%;
-  color: #66fcf1;
+  color: #ec7676;
 }
 
 h1 {
@@ -75,7 +75,7 @@ button {
   box-shadow: 1px 1px 1px #0b0c10, 0px 0px 1px #0b0c10;
   width: 15vw;
   margin-top: 4vh;
-  background-color: #66fcf1;
+  background-color: #ec7676;
   margin-left: 6vw;
   border-radius: 1.2vh;
   color: #0b0c10;
@@ -91,7 +91,7 @@ button:active {
   box-shadow: 1px 1px 1px #0b0c10, 0px 0px 1px #0b0c10;
   width: 15vw;
   margin-top: 4vh;
-  background-color: #66fcf1;
+  background-color: #ec7676;
   margin-left: 6vw;
   border-radius: 1.2vh;
   color: #0b0c10;
@@ -106,7 +106,7 @@ button:focus {
   height: 7vh;
   width: 15vw;
   box-shadow: 1px 1px 1px #0b0c10, 0px 0px 1px #0b0c10;
-  background-color: #66fcf1;
+  background-color: #ec7676;
   margin-top: 4vh;
   margin-left: 6vw;
   border-radius: 1.2vh;
@@ -140,8 +140,8 @@ input[type="range"]::-webkit-slider-runnable-track {
 }
 
 input[type="range"]::-webkit-slider-thumb {
-  box-shadow: 1px 1px 1px #66fcf1, 0px 0px 1px #66fcf1;
-  border: 0.5vh solid #66fcf1;
+  box-shadow: 1px 1px 1px #ec7676, 0px 0px 1px #ec7676;
+  border: 0.5vh solid #ec7676;
   height: 3vh;
   width: 3vh;
   border-radius: 2vh;
@@ -166,8 +166,8 @@ input[type="range"]::-moz-range-track {
 }
 
 input[type="range"]::-moz-range-thumb {
-  box-shadow: 1px 1px 1px #66fcf1, 0px 0px 1px #66fcf1;
-  border: 1px solid #66fcf1;
+  box-shadow: 1px 1px 1px #ec7676, 0px 0px 1px #ec7676;
+  border: 1px solid #ec7676;
   height: 36px;
   width: 16px;
   border-radius: 3px;
@@ -200,8 +200,8 @@ input[type="range"]::-ms-fill-upper {
 }
 
 input[type="range"]::-ms-thumb {
-  box-shadow: 1px 1px 1px #66fcf1, 0px 0px 1px #66fcf1;
-  border: 1px solid #66fcf1;
+  box-shadow: 1px 1px 1px #ec7676, 0px 0px 1px #ec7676;
+  border: 1px solid #ec7676;
   height: 36px;
   width: 16px;
   border-radius: 3px;

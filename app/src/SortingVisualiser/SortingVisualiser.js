@@ -97,31 +97,31 @@ const SortingVisualiser = () => {
         return (dataValuesTemp, i+1);
     }
 
-    const MergeSortMergeArrays = async (arr, l, m, r) => {
+    const MergeSortMergeArrays = async (arr, start, mid, end) => {
         SetCurrentSwitching([]);
         if (isStarted) {
-            const n1 = m - l + 1;
-            const n2 = r - m;
+            const n1 = mid - start + 1;
+            const n2 = end - mid;
 
             var L = [];
             var R = [];
             
             for (var i = 0; i < n1; ++i){
-                L[i] = arr[l + i];
+                L[i] = arr[start + i];
             }
 
             for (var j = 0; j < n2; ++j){
-                R[j] = arr[m + 1 + j];
+                R[j] = arr[mid + 1 + j];
             }
 
 
             var i = 0;
             var j = 0;
-            var k = l;
+            var k = start;
 
             while (i < n1 && j < n2) {
                 SetCurrentSwitching([k]);
-                SetCurrentCheck([l + i, m + 1 + j]);
+                SetCurrentCheck([start + i, mid + 1 + j]);
                 await Pause();
                 if (L[i] <= R[j]) {
                     arr[k] = L[i];
